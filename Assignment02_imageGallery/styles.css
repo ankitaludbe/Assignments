@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.title{
+    color:rgb(189, 54, 5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: inherit;
+}
+.App {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+form input[type="file"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 16px;
+    background-color: #716df6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.photo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600;
+    height: 400;
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: 60%;
+    border-bottom: 1px solid #ddd;
+}
+
+.photo-card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.photo-card div {
+    padding: 10px;
+}
+
+.photo-card input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+    margin-bottom: 8px;
+}
+
+.photo-card button {
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.photo-card button:hover {
+    background-color: #218838;
+}
+
+.photo-card button:last-child {
+    background-color: #dc3545;
+}
+
+.photo-card button:last-child:hover {
+    background-color: #c82333;
+}
